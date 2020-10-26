@@ -1,11 +1,12 @@
 // ***** Question 1 *****
 
 // *** Uncomment the lines below to test
-// console.log("%cQuestion 1", "color: red") 
+let counter = 1
+counter = 2
 
-// console.log(counter) 
-// // => 2
-// console.log("%c----------", "color: red") 
+console.log(counter) 
+// => 2
+console.log("%c----------", "color: red") 
 
 
 // ***** Question 2 *****
@@ -15,10 +16,10 @@
 // *** otherwise, the error will stop the rest of your code from running
 // console.log("%cQuestion 2", "color: red") 
 
-// console.log(name)
-// // => "Ian"
-// name = "Not Ian" 
-// // => TypeError
+const name = "Gerard"
+// => "Ian"
+//name = "Not Ian" 
+// => TypeError
 // console.log("%c----------", "color: red") 
 
 
@@ -32,6 +33,12 @@
 // // => "Man I sure am thirsty"
 // // => "Ahh that hits the spot"
 // // => 11
+let i = 12;
+for(i = 0; i<=13; i++){
+"Man I sure am thirsty";
+"Ahh that hits the spot"
+}
+
 // console.log("%c----------", "color: red") 
 
 
