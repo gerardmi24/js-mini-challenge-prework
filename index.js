@@ -17,47 +17,67 @@ console.log("%c----------", "color: red")
 // console.log("%cQuestion 2", "color: red") 
 
 const name = "Gerard"
+console.log(name)
 // => "Ian"
 //name = "Not Ian" 
 // => TypeError
-// console.log("%c----------", "color: red") 
+console.log("%c----------", "color: red") 
 
 
 
 // ***** Question 3 *****
-
+function drinkWater(currentThirstLevel) {
+  console.log("Man I sure am thirsty");
+  currentThirstLevel -= 1
+  console.log("Ahh that hits the spot");
+  return currentThirstLevel
+  }
+  console.log(drinkWater(12))
+  
+  console.log("%c----------", "color: red") 
 // *** Uncomment the lines below to test
-// console.log("%cQuestion 3", "color: red") 
+console.log("%cQuestion 3", "color: red") 
 
-// console.log(drinkWater(12))
-// // => "Man I sure am thirsty"
-// // => "Ahh that hits the spot"
-// // => 11
-let i = 12;
-function drinkWater(i) {
-for(i = 0; i<=13; i++){
-"Man I sure am thirsty";
-"Ahh that hits the spot"
-}
-drinkWater();
-}
+console.log(drinkWater(12))
+// => "Man I sure am thirsty"
+// => "Ahh that hits the spot"
+// => 11
 
-// console.log("%c----------", "color: red") 
-
+// let i = 12;
+// function drinkWater(i) {
+// for(i = 0; i<=13; i++){
+// "Man I sure am thirsty";
+// "Ahh that hits the spot"
+// }
+// drinkWater();
+// }
 
 
 // ***** Question 4 *****
 
 // *** Uncomment the lines below to test
-// console.log("%cQuestion 4", "color: red") 
 
-// console.log(sameSameButDifferent(5, 5)) 
+function sameSameButDifferent(num, maybeNum) {
+  if (num === maybeNum) {
+    return "same same"
+  }
+  else if (num === parseInt(maybeNum)) {
+    return "same same (but different)"
+  }
+  else {
+    return "different"
+  }
+}
+
+console.log("%cQuestion 4", "color: red") 
+
+console.log(sameSameButDifferent(5, 5)) 
 // // => "same same"
 //
-// console.log(sameSameButDifferent(123, "123")) 
+console.log(sameSameButDifferent(123, "123")) 
 // // => "same same (but different)"
 //
-// console.log(sameSameButDifferent(5, 7)) 
+console.log(sameSameButDifferent(5, 7)) 
 // // => "different"
 //
 // console.log(sameSameButDifferent(123, "122")) 
@@ -67,39 +87,49 @@ drinkWater();
 
 
 // ***** Question 5 *****
+function updateGrade(student, grade) {
+  student.grade = grade
 
+}
 // *** Uncomment the lines below to test
-// console.log("%cQuestion 5", "color: red")
+console.log("%cQuestion 5", "color: red")
 
-// const student1 = { name: "Duane", grade: 88 }
-// updateGrade(student1, 92)
-// console.log(student1)  
-// // => { name: "Duane", grade: 92 }
-// console.log("%c----------", "color: red") 
+const student1 = { name: "Duane", grade: 88 }
+updateGrade(student1, 92)
+console.log(student1)  
+// => { name: "Duane", grade: 92 }
+console.log("%c----------", "color: red") 
 
 
 
 // ***** Question 6 *****
-
+function printNamesAndPhones(users){
+  users.forEach(
+    function(userObj) {
+      console.log(userObj.name)
+      console.log(`Cell: ${userObj.phones.cell}`)
+      console.log(`Office: ${userObj.phones.office}`)
+  })
+}
 // *** Uncomment the lines below to test
 // console.log("%cQuestion 6", "color: red")
 
-// const users = [ 
-//   { 
-//     name: "Duane", phones: { cell: "555-123-4567", office: "555-456-7890" }
-//   },
-//   { 
-//     name: "Liza", phones: { cell: "555-234-5678", office: "555-567-1234" }
-//   }
-// ]
-// printNameAndPhones(users)
-// // => "Duane"
-// // => "Cell: 555-123-4567"
-// // => "Office: 555-456-7890"
-// // => "Liza"
-// // => "Cell: 555-234-5678"
-// // => "Office: 555-567-1234"
-// console.log("%c----------", "color: red") 
+const users = [ 
+  { 
+    name: "Duane", phones: { cell: "555-123-4567", office: "555-456-7890" }
+  },
+  { 
+    name: "Liza", phones: { cell: "555-234-5678", office: "555-567-1234" }
+  }
+]
+printNamesAndPhones(users)
+// => "Duane"
+// => "Cell: 555-123-4567"
+// => "Office: 555-456-7890"
+// => "Liza"
+// => "Cell: 555-234-5678"
+// => "Office: 555-567-1234"
+console.log("%c----------", "color: red") 
 
 
 // ***** Callbacks *****
