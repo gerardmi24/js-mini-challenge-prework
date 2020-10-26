@@ -34,9 +34,12 @@ const name = "Gerard"
 // // => "Ahh that hits the spot"
 // // => 11
 let i = 12;
+function drinkWater(i) {
 for(i = 0; i<=13; i++){
 "Man I sure am thirsty";
 "Ahh that hits the spot"
+}
+drinkWater();
 }
 
 // console.log("%c----------", "color: red") 
